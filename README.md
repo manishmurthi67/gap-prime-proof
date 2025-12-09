@@ -4,15 +4,34 @@ Complete formalization proving every natural number n ≥ 2 is gap-prime.
 
 ## Main Result
 
-**Theorem:** Every n ≥ 2 has at least one m < n where gap(n,m) is prime.
+**Theorem:** For every natural number n ≥ 2, there exists m < n such that gap(n,m) is a traditional prime number.
 
-**Proof:** See `D31Framework/HalfPointTheorySimple.lean`
+**Proof Location:** `D31Framework/HalfPointTheorySimple.lean`
 
-## Files
+## Repository Structure
 
-- **Core proof:** `D31Framework/HalfPointTheorySimple.lean`
-- **Supporting theory:** See D31Framework folder
+### Core Files
+- `D31Framework/HalfPointTheorySimple.lean` - **Main theorem proof**
+- `D31Framework/CoreTheory.lean` - Core definitions and axioms
+- `D31Framework/ExhaustiveProofs.lean` - Exhaustive proofs for n ∈ [2,31]
+
+### Supporting Modules
+- `D31Framework/Basic.lean` - Utility functions
+- `D31Framework/Examples.lean` - Validation examples
+- `D31Framework/FractionSpace.lean` - Fractional space theory
+- `D31Framework/InfinityLattice.lean` - Lattice structure
+- `D31Framework/TwoCycleTheory.lean` - Cycle theory
+- `D31Framework/UniversalCenterPoint.lean` - Center point theory
+
+### Entry Points
+- `GapPrime.lean` - Simple gap-prime definition
+- `D31Framework.lean` - Framework root module
+- `Main.lean` - Demo executable
 
 ## Author
 
-Manish Murthi, 2025
+Manish Murthi, December 2025
+
+## License
+
+MIT
